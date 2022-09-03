@@ -1,4 +1,4 @@
-objeto_json=[
+lista_preguntas=[
     {
         "nombre":"ulises",
         "apellido":"juarez"
@@ -10,10 +10,8 @@ objeto_json=[
 ]
 
 
-for i in objeto_json:
+for i in lista_preguntas:
     print(i["nombre"])
     print(i["apellido"])
     print("************************************")
 
-
-print(type(objeto_json))
