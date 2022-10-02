@@ -1,3 +1,4 @@
+import requests
 lista_preguntas=[
     {
         "enunciado":"¿Qué es un compilador?",
@@ -733,8 +734,10 @@ letras_2 = ['P','H','P']
 #Abierta
 #Rellenar espacios
 
-for i in lista_preguntas:
-    print(i["enunciado"])
-    print(i["autor"])
-    print("************************************")
+url="https://banco-de-datos.herokuapp.com/nueva_pregunta?"
+
+for item in lista_preguntas:
+    response=requests.request("POST",url=url,params=item)
+    print(response.text)
+
 
