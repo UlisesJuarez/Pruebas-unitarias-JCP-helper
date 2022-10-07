@@ -734,7 +734,7 @@ letras_2 = ['P','H','P']
 #Abierta
 #Rellenar espacios
 
-url="https://banco-de-datos.herokuapp.com/nueva_pregunta?"
+url="http://127.0.0.1:5000/nueva_pregunta?"
 
 for item in lista_preguntas:
     response=requests.request("POST",url=url,params=item)
